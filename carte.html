@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de la Balade</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
 
+    <nav class="main-nav">
+        <a href="index.html">Timeline</a>
+        <a href="carte.html" class="active">Carte</a>
+        <a href="graphique.html">Statistiques</a>
+    </nav>
+
+    <div class="visual-container">
+        <h1 class="page-title">🌍 Le Parcours en Images</h1>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([48.908, 2.370], 15);
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '© OpenStreetMap & CARTO'
+        }).addTo(map);
+
+        // VOS DONNÉES 
+        var points = [
+            [48.91166, 2.36705, 'photo-01-campuscondorcet.jpg', 'Départ : Campus Condorcet'],
+            [48.91145, 2.36668, 'photo-02-humatheque.jpg', 'Devant l\'Humathèque'],
+            [48.90953, 2.36665, 'photo-03-humathèque.jpg', 'intérieur l\'Humathèque'],
+            [48.90676, 2.36588, 'photo-04-campuscondorcetsud.jpg', 'Centre des Colloques'],
+            [48.90682, 2.36619, 'photo-05-TSF.jpg', 'Le batiment TSF'],
+            [48.90683, 2.36609, 'photo-06-polesociomedical.jpg', 'Le Pole socio médical'],
+            [48.90666, 2.36643, 'photo-07-MSHParis.jpg', 'Maison des Sciences de l'Homme'],
+            [48.90670, 2.36645, 'photo-08-bar.jpg', 'Bar'],
+            [48.90589, 2.36691, 'balade-09-infographieplacedesEMGP.jpeg', 'Place des EMGP'],
+            [48.90566, 2.36781, 'balade-10-signalisationplacedesEMGP.jpeg', 'Signalisation Place EMGP'],
+            [48.90561, 2.36785, 'balade-11-camiongrossiste.jpeg', 'Livraison Grossiste'],
+            [48.90536, 2.36787, 'balade-12-studio217staracademy.jpeg', 'Le fameux Studio 217'],
+            [48.90484, 2.36767, 'balade-13-signalisationstudios210.jpeg', 'Vers les Studios 210'],
+            [48.90416, 2.36746, 'balade-14-tournagevideo.jpeg', 'Tournage en cours'],
+            [48.90395, 2.36767, 'balade-15-lepassage.jpeg', 'Le Passage'],
+            [48.90395, 2.36769, 'balade-16-signalisationfermeurbaine.jpeg', 'Ferme Urbaine'],
+            [48.90412, 2.36792, 'balade-17-studio210.jpeg', 'Entrée Studio 210'],
+            [48.90498, 2.36770, 'balade-18-staracademy.jpeg', 'Affiche Star Academy'],
+            [48.90740, 2.36694, 'balade-19-ehss.jpeg', 'Bâtiment EHESS'],
+            [48.90781, 2.36801, 'balade-20-commercedelocation.jpeg', 'Commerce de location'],
+            [48.90823, 2.36898, 'balade-21-fournisseur1.jpeg', 'Grossiste Textile 1'],
+            [48.90827, 2.36901, 'balade-22-fournisseur2.jpeg', 'Grossiste Textile 2'],
+            [48.90846, 2.36922, 'balade-23-fournisseur3.jpeg', 'Grossiste Textile 3'],
+            [48.90848, 2.36926, 'balade-24-fournisseur4.jpeg', 'Grossiste Textile 4'],
+            [48.90856, 2.36933, 'balade-25-fournisseur5.jpeg', 'Grossiste Textile 5'],
+            [48.90958, 2.37171, 'balade-26-fournisseur6.jpeg', 'Grossiste Textile 6'],
+            [48.90968, 2.37186, 'balade-27-signalisationrue.jpeg', 'Signalisation Rue'],
+            [48.91049, 2.37303, 'balade-28-centrebusaubervilliers.jpeg', 'Centre Bus Aubervilliers'],
+            [48.91151, 2.37311, 'balade-29-fashioncentercifa.jpeg', 'Fashion Center CIFA'],
+            [48.91342, 2.37232, 'balade-30-signalisationsaintgobain.jpeg', 'Saint-Gobain'],
+            [48.91609, 2.37489, 'balade-31-moovrider.jpeg', 'Moov Rider']
+        ];
+
+        points.forEach(function(point) {
+            var lat = point[0];
+            var lon = point[1];
+            var fileName = point[2];
+            var title = point[3];
+
+            var marker = L.marker([lat, lon]).addTo(map);
+            
+            // Popup
+            marker.bindPopup("<b>" + title + "</b><br><img src='images/" + fileName + "' class='popup-img'>");
+
+            // Centrage intelligent (décalage vers le haut)
+            marker.on('click', function() {
+                var pixelPosition = map.project([lat, lon], map.getZoom());
+                pixelPosition.y -= 150; 
+                var newCenter = map.unproject(pixelPosition, map.getZoom());
+                map.setView(newCenter, map.getZoom(), {animate: true});
+            });
+        });
+    </script>
+</body>
+</html>
