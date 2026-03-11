@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
-<meta charset="UTF-8">
-<title>Balade photographique à Aubervilliers</title>
-
-<link rel="stylesheet" href="styles.css">
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Balade Visuelle Aubervilliers</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+   <nav class="main-nav">
+        <a href="index.html" class="active">Timeline</a>
+        <a href="carte.html">Carte</a>
+        <a href="graphique.html">Statistiques</a>
+    </nav>
+  
+ <h1 class="page-title">⏳ Le Fil du Temps</h1>
 
-<h1>Balade photographique à Aubervilliers</h1>
+    <div class="visual-container timeline-wrapper">
+        
+        <button id="scrollLeft" class="nav-btn left-btn">❮</button>
 
-<nav>
+        <div class="timeline-container" id="scrollContainer">
+            <div class="timeline" id="timeline-events">
+                </div>
+        </div>
 
-<a href="index.html">Timeline</a>
-<a href="carte.html">Carte</a>
-<a href="graphique.html">Graphique</a>
-
-</nav>
-
-<div class="timeline">
-
-</div>
-
+        <button id="scrollRight" class="nav-btn right-btn">❯</button>
+        
+    </div>
+    
+    <script src="timeline.js"></script>
 </body>
 </html>
