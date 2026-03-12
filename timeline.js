@@ -123,7 +123,7 @@ const eventsData = [
     },
     {
         time: '10:36',
-        title: 'Tour emblématique d'Aubervilliers',
+        title: 'Tour emblématique d\'Aubervilliers',
         description: 'Photo prise le 2025-10-30',
         image: 'images/photo-18-tour.jpg',
         cardContent: 'Lat: 48.90629 | Long: 2.3662'
