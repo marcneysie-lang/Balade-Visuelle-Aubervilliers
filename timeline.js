@@ -46,7 +46,7 @@ const eventsData = [
     },
     {
         time: '10:28',
-        title: 'Maison des Sciences de l'Homme',
+        title: 'Maison des Sciences de l\'Homme',
         description: 'Photo prise le 2025-10-30',
         image: 'images/photo-07-MSHParis.jpg',
         cardContent: 'Lat: 48.90666 | Long: 2.3661'
