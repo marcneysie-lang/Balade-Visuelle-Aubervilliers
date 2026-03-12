@@ -35,7 +35,7 @@ const eventsData = [
         title: 'Le batiment TSF',
         description: 'Photo prise le 2025-10-30',
         image: 'images/photo5.jpg',
-        cardContent: 'Lat: 48.90682 | Long: 2.3661,'
+        cardContent: 'Lat: 48.90682 | Long: 2.3661'
     },
     {
         time: '10:25',
@@ -258,9 +258,10 @@ function renderTimeline() {
 
     eventsData.forEach((event, index) => {
         const eventElement = document.createElement('div');
-        // Force la classe "position-top" pour que tout s'affiche au-dessus
+        // Classe pour positionner correctement la timeline
         eventElement.className = 'timeline-event position-top';
-
+        
+      // ✅ Utilisation des backticks pour injecter les variables
         eventElement.innerHTML = `
             <div class="timeline-dot"></div>
             <div class="timeline-date">${event.time}</div>
