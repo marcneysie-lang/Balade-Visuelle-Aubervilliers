@@ -144,7 +144,7 @@ const eventsData = [
     },
     {
         time: '10:38',
-        title: 'Tableau d'affichage',
+        title: 'Tableau',
         description: 'Photo prise le 2025-10-30',
         image: 'images/photo21.jpg',
         cardContent: 'Lat: 48.90599 | Long: 2.366'
