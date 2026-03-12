@@ -7,217 +7,245 @@ const eventsData = [
         title: 'Campus Condorcet',
         description: 'Début de l\'aventure.',
         image: 'images/photo-01-campuscondorcet.jpg',
-        cardContent: 'Lat: 48.9117 | Long: 2.3671'
+        cardContent: 'Lat: 48.91167 | Long: 2.3670'
     },
     {
         time: '10:15',
         title: 'Humathèque',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-02-humathèque.jpeg',
-        cardContent: 'Lat: 48.9115 | Long: 2.3667'
+        image: 'images/photo-02-humathèque.jpg',
+        cardContent: 'Lat: 48.91145 | Long: 2.3666'
+    },
+    {
+        time: '10:17',
+        title: 'Humathèque',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-03-humathèque.jpg',
+        cardContent: 'Lat: 48.91145 | Long: 2.3666'
     },
     {
         time: '10:20',
-        title: 'Studio TSF',
+        title: 'Campus Condorcet Sud',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-03-studioTSF.jpeg',
-        cardContent: 'Lat: 48.9095 | Long: 2.3666'
+        image: 'images/photo-04-campuscondorcetsud.jpg',
+        cardContent: 'Lat: 48.90676 | Long: 2.3658'
+    },
+    {
+        time: '10:22',
+        title: 'Le batiment TSF',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-05-TSF.jpg',
+        cardContent: 'Lat: 48.90682 | Long: 2.3661,'
+    },
+    {
+        time: '10:25',
+        title: 'Pole Socio Médical',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-06-polesociomedical.jpg',
+        cardContent: 'Lat: 48.90683 | Long: 2.3660'
+    },
+    {
+        time: '10:28',
+        title: 'Maison des Sciences de l'Homme',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-07-MSHParis.jpg',
+        cardContent: 'Lat: 48.90666 | Long: 2.3661'
+    },
+    {
+        time: '10:29',
+        title: 'Bar',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-08-bar.jpg',
+        cardContent: 'Lat: 48.90670 | Long: 2.3662'
+    },
+    {
+        time: '10:30',
+        title: 'Commerces: boulangerie et salon de thé',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-09-boulanger-salon.jpg',
+        cardContent: 'Lat: 48.90659 | Long: 2.3663'
+    },
+    {
+        time: '10:30',
+        title: 'Franprix',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-10-franprix.jpg',
+        cardContent: 'Lat: 48.90660 | Long: 2.3664'
     },
     {
         time: '10:31',
-        title: 'Centre des Colloques',
+        title: 'Pharmacie',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-04-centredescolloques.jpeg',
-        cardContent: 'Lat: 48.9068 | Long: 2.3659'
+        image: 'images/photo-11-pharmacie.jpg',
+        cardContent: 'Lat: 48.90671 | Long: 2.3668'
     },
     {
         time: '10:32',
-        title: 'Parking à vélos',
+        title: 'Parc de la place',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-05-parkingàvélos.jpeg',
-        cardContent: 'Lat: 48.9068 | Long: 2.3662'
+        image: 'images/photo-12-parc.jpg',
+        cardContent: 'Lat: 48.90636 | Long: 2.3664'
     },
     {
         time: '10:32',
-        title: 'Commerces et bus',
+        title: 'Restaurant',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-06-commercesetbus.jpeg',
-        cardContent: 'Lat: 48.9068 | Long: 2.3661'
+        image: 'images/photo-13-restaurant.jpg',
+        cardContent: 'Lat: 48.90624 | Long: 2.3665'
     },
     {
         time: '10:33',
-        title: 'Metro 12 Front Populaire',
+        title: 'Fast Food',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-07-metro12frontpopulaire.jpeg',
-        cardContent: 'Lat: 48.9067 | Long: 2.3664'
+        image: 'images/photo-14-pizza.jpg',
+        cardContent: 'Lat: 48.90616 | Long: 2.3665'
+    },
+    {
+        time: '10:34',
+        title: 'Des gens qui circulent sur la place',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-15-passants.jpg',
+        cardContent: 'Lat: 48.90614 | Long: 2.3665'
+    },
+    {
+        time: '10:34',
+        title: 'Affichage sur la ville',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-16-affichage.jpg',
+        cardContent: 'Lat: 48.90632 | Long: 2.3664'
     },
     {
         time: '10:35',
-        title: 'Studio Centrale',
+        title: 'Logement des habitants',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-08-studiocentrale.jpeg',
-        cardContent: 'Lat: 48.906 | Long: 2.3666'
-    },
-    {
-        time: '10:35',
-        title: 'Place des EMGP',
-        description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-09-infographieplacedes EMGP.jpeg',
-        cardContent: 'Lat: 48.9059 | Long: 2.3669'
+        image: 'images/photo-17-batiment.jpg',
+        cardContent: 'Lat: 48.90627 | Long: 2.3663'
     },
     {
         time: '10:36',
-        title: 'Signalisation EMGP',
+        title: 'Tour emblématique d'Aubervilliers',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-10-signalisationplacedesEMGP.jpeg',
-        cardContent: 'Lat: 48.9057 | Long: 2.3678'
+        image: 'images/photo-18-tour.jpg',
+        cardContent: 'Lat: 48.90629 | Long: 2.3662'
     },
     {
         time: '10:37',
-        title: 'Camion grossiste',
+        title: 'Achat et vente de maison',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-11-camiongrossiste.jpeg',
-        cardContent: 'Lat: 48.9056 | Long: 2.3678'
-    },
-    {
-        time: '10:37',
-        title: 'Studio 217 Star Academy',
-        description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-12-studio217staracademy.jpeg',
-        cardContent: 'Lat: 48.9054 | Long: 2.3679'
+        image: 'images/photo-19-immobilliers.jpg',
+        cardContent: 'Lat: 48.90626 | Long: 2.3662'
     },
     {
         time: '10:38',
-        title: 'Signalisation Studios 210',
+        title: 'Studio Central',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-13-signalisationstudios210.jpeg',
-        cardContent: 'Lat: 48.9048 | Long: 2.3677'
+        image: 'images/photo-20-studiocentral.jpg',
+        cardContent: 'Lat: 48.90598 | Long: 2.3666'
+    },
+    {
+        time: '10:38',
+        title: 'Tableau d'affichage',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-21-tableau.jpg',
+        cardContent: 'Lat: 48.90599 | Long: 2.366'
     },
     {
         time: '10:39',
-        title: 'Tournage video',
+        title: 'Studio 217 Star Academy',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-14-tournagevideo.jpeg',
-        cardContent: 'Lat: 48.9042 | Long: 2.3675'
+        image: 'images/photo-22-studio217.jpg',
+        cardContent: 'Lat: 48.90537 | Long: 2.367'
+    },
+    {
+        time: '10:40',
+        title: 'Michel friperie',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-23-Michel.jpg',
+        cardContent: 'Lat: 48.90542 | Long: 2.367'
     },
     {
         time: '10:41',
-        title: 'Le Passage',
+        title: 'Affiche du studio 210',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-15-lepassage.jpeg',
-        cardContent: 'Lat: 48.904 | Long: 2.3677'
+        image: 'images/photo-24-210.jpg',
+        cardContent: 'Lat: 48.90412 | Long: 2.367'
     },
     {
         time: '10:42',
-        title: 'Ferme Urbaine',
+        title: 'Terrain de jeu',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-16-signalisationfermeurbaine.jpeg',
-        cardContent: 'Lat: 48.904 | Long: 2.3677'
+        image: 'images/photo-25-terraindejeu.jpg',
+        cardContent: 'Lat: 48.90417 | Long: 2.367'
     },
     {
-        time: '10:45',
-        title: 'Studio 210',
+        time: '10:44',
+        title: 'Parc urbain, Zone de fauve tardive',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-17-studio210.jpeg',
-        cardContent: 'Lat: 48.9041 | Long: 2.3679'
+        image: 'images/photo-26-zonedefauvetardive.jpg',
+        cardContent: 'Lat: 48.90383 | Long: 2.3676'
     },
     {
-        time: '10:47',
-        title: 'Star Academy',
+        time: '10:46',
+        title: 'Le passage',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-18-staracademy.jpeg',
-        cardContent: 'Lat: 48.905 | Long: 2.3677'
+        image: 'images/photo-27-lepassage.jpg',
+        cardContent: 'Lat: 48.90385 | Long: 2.3676'
     },
     {
-        time: '10:53',
-        title: 'EHSS',
+        time: '10:54',
+        title: 'Bureaux à louer',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-19-ehss.jpeg',
-        cardContent: 'Lat: 48.9074 | Long: 2.3669'
-    },
-    {
-        time: '10:55',
-        title: 'Commerce de location',
-        description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-20-commercedelocation.jpeg',
-        cardContent: 'Lat: 48.9078 | Long: 2.368'
+        image: 'images/photo-28-bureauxàlouer.jpg',
+        cardContent: 'Lat: 48.90781 | Long: 2.368'
     },
     {
         time: '10:56',
-        title: 'Fournisseur 1',
+        title: 'Grossiste bijoutier',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-21-fournisseur1.jpeg',
-        cardContent: 'Lat: 48.9082 | Long: 2.369'
+        image: 'images/photo-29-grossistes.jpg',
+        cardContent: 'Lat: 48.90823 | Long: 2.368'
     },
     {
-        time: '10:56',
-        title: 'Fournisseur 2',
+        time: '10:58',
+        title: 'Collège Miriam Makeba',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-22-fournisseur2.jpeg',
-        cardContent: 'Lat: 48.9083 | Long: 2.369'
-    },
-    {
-        time: '10:56',
-        title: 'Fournisseur 3',
-        description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-23-fournisseur3.jpeg',
-        cardContent: 'Lat: 48.9085 | Long: 2.3692'
-    },
-    {
-        time: '10:57',
-        title: 'Fournisseur 4',
-        description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-24-fournisseur4.jpeg',
-        cardContent: 'Lat: 48.9085 | Long: 2.3693'
-    },
-    {
-        time: '10:57',
-        title: 'Fournisseur 5',
-        description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-25-fournisseur5.jpeg',
-        cardContent: 'Lat: 48.9086 | Long: 2.3693'
-    },
-    {
-        time: '11:01',
-        title: 'Fournisseur 6',
-        description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-26-fournisseur6.jpeg',
-        cardContent: 'Lat: 48.9096 | Long: 2.3717'
-    },
-    {
-        time: '11:01',
-        title: 'Signalisation rue',
-        description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-27-signalisationrue.jpeg',
-        cardContent: 'Lat: 48.9097 | Long: 2.3719'
+        image: 'images/photo-30-CollègeMiriamMakeba.jpg',
+        cardContent: 'Lat: 48.90969 | Long: 2.371'
     },
     {
         time: '11:04',
-        title: 'Centre bus Aubervilliers',
+        title: 'Kebab',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-28-centrebusaubervilliers.jpeg',
-        cardContent: 'Lat: 48.9105 | Long: 2.373'
-    },
-    {
-        time: '11:06',
-        title: 'Fashion center CIFA',
-        description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-29-fashioncentercifa.jpeg',
-        cardContent: 'Lat: 48.9115 | Long: 2.3731'
+        image: 'images/photo-31-Kebab.jpg',
+        cardContent: 'Lat: 48.9115 | Long: 2.373'
     },
     {
         time: '11:10',
-        title: 'Signalisation Saint-Gobain',
+        title: 'Vélos électriques à louer',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-30-signalisationsaintgobain.jpeg',
-        cardContent: 'Lat: 48.9134 | Long: 2.3723'
+        image: 'images/photo-32-véloélectrique.jpg',
+        cardContent: 'Lat: 48.91102 | Long: 2.373'
     },
     {
-        time: '11:21',
-        title: 'Moovrider',
+        time: '11:15',
+        title: 'Cours d'eau',
         description: 'Photo prise le 2025-10-30',
-        image: 'images/balade-31-moovrider.jpeg',
-        cardContent: 'Lat: 48.9161 | Long: 2.3749'
+        image: 'images/photo-33-coursd\'eau.jpg',
+        cardContent: 'Lat: 48.91217 | Long: 2.374'
+    },
+    {
+        time: '11:28',
+        title: 'Terideal bureaux de location',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-34-Terideal.jpg',
+        cardContent: 'Lat: 48.91345 | Long: 2.375'
+    },
+    {
+        time: '11:30',
+        title: 'Ferme Urbaine',
+        description: 'Photo prise le 2025-10-30',
+        image: 'images/photo-35-fermeurbaine.jpg',
+        cardContent: 'Lat: 48.91476 | Long: 2.376'
     }
 ];
 
